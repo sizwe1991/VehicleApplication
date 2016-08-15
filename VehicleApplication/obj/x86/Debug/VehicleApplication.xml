@@ -1,0 +1,208 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VehicleApplication
+</name>
+</assembly>
+<members>
+<member name="T:VehicleApplication.BookingDataSet.VehicleCollectionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PartsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PaymentCheckViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PurchasedPartViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.TopUsedPartsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.BookingViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.tblBookingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.QuoteViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.Towing_DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.VehicleCollectionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PartsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PaymentCheckViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PurchasedPartViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.TopUsedPartsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.BookingViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.tblBookingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.QuoteViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.Towing_Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.VehicleCollectionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PartsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PaymentCheckViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.PurchasedPartViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.TopUsedPartsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.BookingViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.tblBookingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.QuoteViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet.Towing_RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.VehicleCollectionViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.PartsViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.PaymentCheckViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.PurchasedPartViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.TopUsedPartsViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.BookingViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.tblBookingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.QuoteViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.Towing_TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(VehicleApplication.BookingDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(VehicleApplication.BookingDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(VehicleApplication.BookingDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.UpdateAll(VehicleApplication.BookingDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:VehicleApplication.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:VehicleApplication.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:VehicleApplication.My.Resources.Resources.New_Microsoft_PowerPoint_Presentation">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:VehicleApplication.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
