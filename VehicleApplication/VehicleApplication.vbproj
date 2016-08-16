@@ -266,8 +266,8 @@
       <DependentUpon>BookingCrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\Design\AllPartCrystalReport.vb">
-      <DependentUpon>AllPartCrystalReport.rpt</DependentUpon>
+    <Compile Include="Reports\Design\AllPartsCrystalReport.vb">
+      <DependentUpon>AllPartsCrystalReport.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
@@ -330,12 +330,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PaymentCrystalReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Design\VehicleCollectionCrystalReport.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VehicleCollectionCrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\Viewer\PurchasedParts.Designer.vb">
@@ -434,9 +428,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BookingCrystalReport.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Design\AllPartCrystalReport.rpt">
+    <EmbeddedResource Include="Reports\Design\AllPartsCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>AllPartCrystalReport.vb</LastGenOutput>
+      <LastGenOutput>AllPartsCrystalReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Design\TowingCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -477,10 +471,6 @@
     <EmbeddedResource Include="Reports\Design\PaymentCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PaymentCrystalReport.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Design\VehicleCollectionCrystalReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>VehicleCollectionCrystalReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Viewer\PurchasedParts.resx">
       <DependentUpon>PurchasedParts.vb</DependentUpon>

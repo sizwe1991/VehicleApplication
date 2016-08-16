@@ -1,14 +1,5 @@
 ﻿Partial Class BookingDataSet
-    Partial Class VehicleCollectionViewDataTable
 
-        Private Sub VehicleCollectionViewDataTable_ColumnChanging(sender As System.Object, e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
-            If (e.Column.ColumnName = Me.DateCollectedColumn.ColumnName) Then
-                'Add user code here
-            End If
-
-        End Sub
-
-    End Class
 
 
     Partial Class BookingViewDataTable

@@ -71,12 +71,12 @@ Public Class Main
         ChangePassword.ShowDialog()
     End Sub
 
-    Public Sub printPaymentReport()
+    Public Sub printReportAllParts()
 
         Dim sql As String = "SELECT        * FROM            PartsView"
         Dim cmd As New SqlDataAdapter
         Dim ds As New DataTable
-        Dim report As New AllPartCrystalReport
+        Dim report As New AllPartsCrystalReport
         cmd.SelectCommand = New SqlCommand
         cmd.SelectCommand.CommandText = sql
         cmd.SelectCommand.Connection = objCon
@@ -91,9 +91,7 @@ Public Class Main
         ' report.PrintToPrinter(New System.Drawing.Printing.PrinterSettings, New System.Drawing.Printing.PageSettings, False)
     End Sub
 
-    Private Sub AllPartsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AllPartsToolStripMenuItem.Click
-        printPaymentReport()
-    End Sub
+  
 
     Private Sub TopUsedPartsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim frm As New TopUsedPart
@@ -156,6 +154,15 @@ Public Class Main
 
     Private Sub VehicleTowingToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles VehicleTowingToolStripMenuItem.Click
         Dim frm As New Towing
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub AllPartsToolStripMenuItem1_Click(sender As System.Object, e As System.EventArgs) Handles AllPartsToolStripMenuItem1.Click
+        printReportAllParts()
+    End Sub
+
+    Private Sub MostUsedPartsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles MostUsedPartsToolStripMenuItem.Click
+        Dim frm As New TopUsedPart
         frm.ShowDialog()
     End Sub
 End Class

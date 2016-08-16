@@ -212,7 +212,7 @@ Partial Class Main
         '
         Me.AllPartsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AllPartsToolStripMenuItem1, Me.MostUsedPartsToolStripMenuItem})
         Me.AllPartsToolStripMenuItem.Name = "AllPartsToolStripMenuItem"
-        Me.AllPartsToolStripMenuItem.Size = New System.Drawing.Size(192, 24)
+        Me.AllPartsToolStripMenuItem.Size = New System.Drawing.Size(185, 24)
         Me.AllPartsToolStripMenuItem.Text = "Parts Reports"
         '
         'AllPartsToolStripMenuItem1
@@ -230,19 +230,19 @@ Partial Class Main
         'InvoiceReportToolStripMenuItem
         '
         Me.InvoiceReportToolStripMenuItem.Name = "InvoiceReportToolStripMenuItem"
-        Me.InvoiceReportToolStripMenuItem.Size = New System.Drawing.Size(192, 24)
+        Me.InvoiceReportToolStripMenuItem.Size = New System.Drawing.Size(185, 24)
         Me.InvoiceReportToolStripMenuItem.Text = "Invoice Report"
         '
         'BookingReportsToolStripMenuItem
         '
         Me.BookingReportsToolStripMenuItem.Name = "BookingReportsToolStripMenuItem"
-        Me.BookingReportsToolStripMenuItem.Size = New System.Drawing.Size(192, 24)
-        Me.BookingReportsToolStripMenuItem.Text = "Booking Reports"
+        Me.BookingReportsToolStripMenuItem.Size = New System.Drawing.Size(185, 24)
+        Me.BookingReportsToolStripMenuItem.Text = "Booking Report"
         '
         'TowingReportToolStripMenuItem
         '
         Me.TowingReportToolStripMenuItem.Name = "TowingReportToolStripMenuItem"
-        Me.TowingReportToolStripMenuItem.Size = New System.Drawing.Size(192, 24)
+        Me.TowingReportToolStripMenuItem.Size = New System.Drawing.Size(185, 24)
         Me.TowingReportToolStripMenuItem.Text = "Towing Report"
         '
         'LogOutToolStripMenuItem
