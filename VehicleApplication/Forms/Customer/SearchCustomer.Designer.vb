@@ -50,9 +50,13 @@ Partial Class SearchCustomer
         Me.txtPhysical = New System.Windows.Forms.TextBox()
         Me.btnEditCustomer = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -106,7 +110,9 @@ Partial Class SearchCustomer
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.btnReload)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.btnEditCustomer)
@@ -135,7 +141,9 @@ Partial Class SearchCustomer
         '
         'Panel2
         '
+        Me.Panel2.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.txtMobileNo)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Label2)
@@ -154,7 +162,7 @@ Partial Class SearchCustomer
         Me.Panel2.Controls.Add(Me.txtPostal)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.txtPhysical)
-        Me.Panel2.Location = New System.Drawing.Point(155, 31)
+        Me.Panel2.Location = New System.Drawing.Point(205, 34)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(455, 526)
         Me.Panel2.TabIndex = 32
@@ -340,6 +348,26 @@ Partial Class SearchCustomer
         Me.Label7.TabIndex = 30
         Me.Label7.Text = "Customer Management window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(9, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox2.Location = New System.Drawing.Point(6, 8)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 81
+        Me.PictureBox2.TabStop = False
+        '
         'SearchCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
@@ -359,6 +387,8 @@ Partial Class SearchCustomer
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -390,4 +420,6 @@ Partial Class SearchCustomer
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtPhysical As System.Windows.Forms.TextBox
     Friend WithEvents btnReload As System.Windows.Forms.Button
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

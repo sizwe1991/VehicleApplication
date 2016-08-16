@@ -32,9 +32,11 @@ Partial Class ForgotPassword
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancel
@@ -118,7 +120,9 @@ Partial Class ForgotPassword
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnSearch)
@@ -136,6 +140,16 @@ Partial Class ForgotPassword
         Me.Panel1.Size = New System.Drawing.Size(499, 278)
         Me.Panel1.TabIndex = 17
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(216, 11)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(277, 29)
+        Me.Label7.TabIndex = 31
+        Me.Label7.Text = "Forgot Password Window"
+        '
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -146,15 +160,15 @@ Partial Class ForgotPassword
         Me.Button1.Text = "Close"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label7
+        'PictureBox1
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(216, 11)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(277, 29)
-        Me.Label7.TabIndex = 31
-        Me.Label7.Text = "Forgot Password Window"
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
         '
         'ForgotPassword
         '
@@ -173,6 +187,7 @@ Partial Class ForgotPassword
         Me.Text = "Forgot Password"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -188,4 +203,5 @@ Partial Class ForgotPassword
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

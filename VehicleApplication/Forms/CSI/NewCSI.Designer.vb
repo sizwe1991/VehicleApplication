@@ -40,7 +40,9 @@ Partial Class NewCSI
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -159,7 +161,9 @@ Partial Class NewCSI
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.btnClose)
         Me.Panel1.Controls.Add(Me.btnClear)
@@ -212,6 +216,16 @@ Partial Class NewCSI
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(8, -1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'NewCSI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -229,6 +243,7 @@ Partial Class NewCSI
         Me.Text = "NewCSI"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -250,4 +265,5 @@ Partial Class NewCSI
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

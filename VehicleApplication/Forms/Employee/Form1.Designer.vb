@@ -41,7 +41,9 @@ Partial Class UpdateEmployee
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtAnswer
@@ -189,7 +191,9 @@ Partial Class UpdateEmployee
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.btnSave)
         Me.Panel1.Controls.Add(Me.Button1)
@@ -224,6 +228,16 @@ Partial Class UpdateEmployee
         Me.Label2.TabIndex = 62
         Me.Label2.Text = "Edit Employee Window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'UpdateEmployee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -241,6 +255,7 @@ Partial Class UpdateEmployee
         Me.Text = "Update Employee"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -263,4 +278,5 @@ Partial Class UpdateEmployee
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

@@ -57,10 +57,14 @@ Partial Class SearchSupplier
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -103,7 +107,9 @@ Partial Class SearchSupplier
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button2)
@@ -143,7 +149,9 @@ Partial Class SearchSupplier
         '
         'Panel3
         '
+        Me.Panel3.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Controls.Add(Me.Label8)
         Me.Panel3.Controls.Add(Me.Button5)
         Me.Panel3.Controls.Add(Me.btnEditClear)
@@ -416,6 +424,26 @@ Partial Class SearchSupplier
         Me.Label7.TabIndex = 30
         Me.Label7.Text = "Supplier Management Window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 81
+        Me.PictureBox2.TabStop = False
+        '
         'SearchSupplier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -438,6 +466,8 @@ Partial Class SearchSupplier
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -476,4 +506,6 @@ Partial Class SearchSupplier
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

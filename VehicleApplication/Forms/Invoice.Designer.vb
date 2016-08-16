@@ -48,12 +48,16 @@ Partial Class Invoice
         Me.txtQuoteNo = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.btnSearch)
         Me.Panel1.Controls.Add(Me.btnClose)
@@ -68,6 +72,7 @@ Partial Class Invoice
         '
         'Panel2
         '
+        Me.Panel2.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.chksignature)
         Me.Panel2.Controls.Add(Me.chkMerchant)
@@ -223,9 +228,9 @@ Partial Class Invoice
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(16, 218)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(154, 19)
+        Me.Label6.Size = New System.Drawing.Size(95, 19)
         Me.Label6.TabIndex = 7
-        Me.Label6.Text = "Total Labour Amount"
+        Me.Label6.Text = "Total Labour"
         '
         'Label5
         '
@@ -241,9 +246,9 @@ Partial Class Invoice
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(16, 123)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(159, 19)
+        Me.Label8.Size = New System.Drawing.Size(132, 19)
         Me.Label8.TabIndex = 5
-        Me.Label8.Text = "Quotation Description"
+        Me.Label8.Text = "Quote Description"
         '
         'Label4
         '
@@ -288,9 +293,9 @@ Partial Class Invoice
         Me.txtQuoteNo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtQuoteNo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.txtQuoteNo.FormattingEnabled = True
-        Me.txtQuoteNo.Location = New System.Drawing.Point(104, 65)
+        Me.txtQuoteNo.Location = New System.Drawing.Point(110, 65)
         Me.txtQuoteNo.Name = "txtQuoteNo"
-        Me.txtQuoteNo.Size = New System.Drawing.Size(206, 27)
+        Me.txtQuoteNo.Size = New System.Drawing.Size(200, 27)
         Me.txtQuoteNo.TabIndex = 38
         '
         'Label2
@@ -312,6 +317,16 @@ Partial Class Invoice
         Me.Label1.TabIndex = 36
         Me.Label1.Text = "Invoice Window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'Invoice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -329,6 +344,7 @@ Partial Class Invoice
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -358,4 +374,5 @@ Partial Class Invoice
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents chksignature As System.Windows.Forms.CheckBox
     Friend WithEvents chkMerchant As System.Windows.Forms.CheckBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

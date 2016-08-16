@@ -48,8 +48,10 @@ Partial Class NewVehicle
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblCompanyName = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -194,7 +196,7 @@ Partial Class NewVehicle
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(219, 57)
+        Me.TextBox1.Location = New System.Drawing.Point(229, 57)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(266, 27)
         Me.TextBox1.TabIndex = 10
@@ -202,7 +204,7 @@ Partial Class NewVehicle
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(4, 57)
+        Me.Label8.Location = New System.Drawing.Point(3, 62)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(209, 19)
         Me.Label8.TabIndex = 9
@@ -250,7 +252,9 @@ Partial Class NewVehicle
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.lblCompanyName)
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.txtCompany)
@@ -298,6 +302,16 @@ Partial Class NewVehicle
         Me.Label10.TabIndex = 31
         Me.Label10.Text = "Company Name"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'NewVehicle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -316,6 +330,7 @@ Partial Class NewVehicle
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -345,4 +360,5 @@ Partial Class NewVehicle
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblCompanyName As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

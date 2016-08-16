@@ -33,12 +33,16 @@ Partial Class CSI
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnrelaod)
         Me.Panel1.Controls.Add(Me.btnedit)
@@ -150,6 +154,16 @@ Partial Class CSI
         Me.Label7.TabIndex = 32
         Me.Label7.Text = "New CSI Certificate Window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 9)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'CSI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
@@ -167,6 +181,7 @@ Partial Class CSI
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -181,4 +196,5 @@ Partial Class CSI
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

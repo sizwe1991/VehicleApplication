@@ -34,7 +34,9 @@ Partial Class AddVehicleModel
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -59,7 +61,7 @@ Partial Class AddVehicleModel
         '
         Me.cmbVehicle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbVehicle.FormattingEnabled = True
-        Me.cmbVehicle.Location = New System.Drawing.Point(118, 69)
+        Me.cmbVehicle.Location = New System.Drawing.Point(124, 67)
         Me.cmbVehicle.Name = "cmbVehicle"
         Me.cmbVehicle.Size = New System.Drawing.Size(264, 26)
         Me.cmbVehicle.TabIndex = 2
@@ -68,7 +70,7 @@ Partial Class AddVehicleModel
         '
         Me.cmbModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbModel.FormattingEnabled = True
-        Me.cmbModel.Location = New System.Drawing.Point(118, 145)
+        Me.cmbModel.Location = New System.Drawing.Point(124, 137)
         Me.cmbModel.Name = "cmbModel"
         Me.cmbModel.Size = New System.Drawing.Size(264, 26)
         Me.cmbModel.TabIndex = 3
@@ -76,7 +78,7 @@ Partial Class AddVehicleModel
         'btnAddVehicle
         '
         Me.btnAddVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddVehicle.Location = New System.Drawing.Point(394, 70)
+        Me.btnAddVehicle.Location = New System.Drawing.Point(401, 63)
         Me.btnAddVehicle.Name = "btnAddVehicle"
         Me.btnAddVehicle.Size = New System.Drawing.Size(64, 25)
         Me.btnAddVehicle.TabIndex = 4
@@ -86,7 +88,7 @@ Partial Class AddVehicleModel
         'btnAddModel
         '
         Me.btnAddModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddModel.Location = New System.Drawing.Point(394, 145)
+        Me.btnAddModel.Location = New System.Drawing.Point(401, 136)
         Me.btnAddModel.Name = "btnAddModel"
         Me.btnAddModel.Size = New System.Drawing.Size(64, 26)
         Me.btnAddModel.TabIndex = 5
@@ -96,7 +98,7 @@ Partial Class AddVehicleModel
         'btnRemoveVehicle
         '
         Me.btnRemoveVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRemoveVehicle.Location = New System.Drawing.Point(464, 70)
+        Me.btnRemoveVehicle.Location = New System.Drawing.Point(471, 63)
         Me.btnRemoveVehicle.Name = "btnRemoveVehicle"
         Me.btnRemoveVehicle.Size = New System.Drawing.Size(49, 25)
         Me.btnRemoveVehicle.TabIndex = 6
@@ -106,7 +108,7 @@ Partial Class AddVehicleModel
         'btnRemoveModel
         '
         Me.btnRemoveModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRemoveModel.Location = New System.Drawing.Point(464, 145)
+        Me.btnRemoveModel.Location = New System.Drawing.Point(471, 136)
         Me.btnRemoveModel.Name = "btnRemoveModel"
         Me.btnRemoveModel.Size = New System.Drawing.Size(49, 26)
         Me.btnRemoveModel.TabIndex = 7
@@ -135,7 +137,9 @@ Partial Class AddVehicleModel
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.btnLinkVehicle)
         Me.Panel1.Controls.Add(Me.btnClose)
@@ -159,11 +163,21 @@ Partial Class AddVehicleModel
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(288, 8)
+        Me.Label11.Location = New System.Drawing.Point(299, 8)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(225, 29)
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Link Vehicle Window"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
         '
         'AddVehicleModel
         '
@@ -181,6 +195,7 @@ Partial Class AddVehicleModel
         Me.Text = "AddVehicleModel"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -196,4 +211,5 @@ Partial Class AddVehicleModel
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

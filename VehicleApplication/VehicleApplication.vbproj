@@ -501,7 +501,9 @@
     <Content Include="Database\Naremotho.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\backgroud.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\mylogo.png" />
     <Content Include="Images\naremotho.png" />
     <Content Include="Database\Naremotho_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

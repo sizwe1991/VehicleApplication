@@ -64,11 +64,15 @@ Partial Class Parts
         Me.btnReload = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlNewPart.SuspendLayout()
         CType(Me.nudMarkUp, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -132,7 +136,9 @@ Partial Class Parts
         '
         'pnlNewPart
         '
+        Me.pnlNewPart.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.pnlNewPart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlNewPart.Controls.Add(Me.PictureBox2)
         Me.pnlNewPart.Controls.Add(Me.txtSelf)
         Me.pnlNewPart.Controls.Add(Me.Label15)
         Me.pnlNewPart.Controls.Add(Me.txtEngineNumber)
@@ -449,7 +455,9 @@ Partial Class Parts
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.btnReload)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.pnlNewPart)
@@ -496,6 +504,26 @@ Partial Class Parts
         Me.Label11.TabIndex = 30
         Me.Label11.Text = "Parts Management Window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox2.Location = New System.Drawing.Point(11, -1)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 81
+        Me.PictureBox2.TabStop = False
+        '
         'Parts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -518,6 +546,8 @@ Partial Class Parts
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -563,4 +593,6 @@ Partial Class Parts
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents txtSelf As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

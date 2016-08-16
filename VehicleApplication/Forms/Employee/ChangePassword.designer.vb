@@ -33,7 +33,9 @@ Partial Class ChangePassword
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -111,7 +113,9 @@ Partial Class ChangePassword
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.btnClose)
         Me.Panel1.Controls.Add(Me.txtConfirm)
@@ -132,7 +136,7 @@ Partial Class ChangePassword
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(190, 20)
+        Me.Label7.Location = New System.Drawing.Point(190, 12)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(284, 29)
         Me.Label7.TabIndex = 30
@@ -149,6 +153,16 @@ Partial Class ChangePassword
         Me.btnClose.TabIndex = 8
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
         '
         'ChangePassword
         '
@@ -167,6 +181,7 @@ Partial Class ChangePassword
         Me.Text = "Change Password"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -181,4 +196,5 @@ Partial Class ChangePassword
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

@@ -51,9 +51,13 @@ Partial Class SearchEmployee
         Me.btnReload = New System.Windows.Forms.Button()
         Me.btnEditEmployee = New System.Windows.Forms.Button()
         Me.btnNewEmployee = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -97,7 +101,9 @@ Partial Class SearchEmployee
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.btnChangePassword)
@@ -116,7 +122,9 @@ Partial Class SearchEmployee
         '
         'Panel2
         '
+        Me.Panel2.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.btnSave)
         Me.Panel2.Controls.Add(Me.Button1)
@@ -344,6 +352,26 @@ Partial Class SearchEmployee
         Me.btnNewEmployee.Text = "New Employee"
         Me.btnNewEmployee.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox2.Location = New System.Drawing.Point(5, -1)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 81
+        Me.PictureBox2.TabStop = False
+        '
         'SearchEmployee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -364,6 +392,8 @@ Partial Class SearchEmployee
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -396,4 +426,6 @@ Partial Class SearchEmployee
     Friend WithEvents txtQuestion As System.Windows.Forms.TextBox
     Friend WithEvents txtSurname As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

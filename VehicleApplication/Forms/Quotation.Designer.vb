@@ -85,6 +85,7 @@ Partial Class Quotation
         Me.txtRate = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,10 +93,12 @@ Partial Class Quotation
         Me.GroupBox2.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.GroupBox1.Controls.Add(Me.txtKM)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -275,12 +278,13 @@ Partial Class Quotation
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.DataGridView2)
-        Me.Panel1.Location = New System.Drawing.Point(23, 196)
+        Me.Panel1.Location = New System.Drawing.Point(28, 198)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(812, 247)
         Me.Panel1.TabIndex = 32
@@ -298,7 +302,7 @@ Partial Class Quotation
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(288, 12)
+        Me.TextBox2.Location = New System.Drawing.Point(286, 7)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(406, 27)
         Me.TextBox2.TabIndex = 2
@@ -306,7 +310,7 @@ Partial Class Quotation
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(4, 12)
+        Me.Label4.Location = New System.Drawing.Point(15, 10)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(90, 19)
         Me.Label4.TabIndex = 1
@@ -335,7 +339,7 @@ Partial Class Quotation
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(265, 21)
+        Me.Label14.Location = New System.Drawing.Point(277, 23)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(68, 19)
         Me.Label14.TabIndex = 1
@@ -344,7 +348,7 @@ Partial Class Quotation
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(19, 21)
+        Me.Label13.Location = New System.Drawing.Point(19, 26)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(76, 19)
         Me.Label13.TabIndex = 0
@@ -352,14 +356,14 @@ Partial Class Quotation
         '
         'txtCode
         '
-        Me.txtCode.Location = New System.Drawing.Point(99, 16)
+        Me.txtCode.Location = New System.Drawing.Point(101, 21)
         Me.txtCode.Name = "txtCode"
-        Me.txtCode.Size = New System.Drawing.Size(166, 27)
+        Me.txtCode.Size = New System.Drawing.Size(164, 27)
         Me.txtCode.TabIndex = 2
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(339, 16)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(354, 18)
         Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(78, 27)
@@ -393,7 +397,7 @@ Partial Class Quotation
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(28, 445)
+        Me.Label3.Location = New System.Drawing.Point(12, 445)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(58, 19)
         Me.Label3.TabIndex = 41
@@ -433,7 +437,7 @@ Partial Class Quotation
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
         Me.ListView1.GridLines = True
-        Me.ListView1.Location = New System.Drawing.Point(20, 52)
+        Me.ListView1.Location = New System.Drawing.Point(20, 57)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(821, 93)
         Me.ListView1.TabIndex = 4
@@ -443,7 +447,7 @@ Partial Class Quotation
         'btnNewPart
         '
         Me.btnNewPart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNewPart.Location = New System.Drawing.Point(720, 16)
+        Me.btnNewPart.Location = New System.Drawing.Point(729, 21)
         Me.btnNewPart.Name = "btnNewPart"
         Me.btnNewPart.Size = New System.Drawing.Size(112, 26)
         Me.btnNewPart.TabIndex = 8
@@ -453,7 +457,7 @@ Partial Class Quotation
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(609, 17)
+        Me.Button5.Location = New System.Drawing.Point(620, 20)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(105, 26)
         Me.Button5.TabIndex = 7
@@ -462,6 +466,7 @@ Partial Class Quotation
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.GroupBox2.Controls.Add(Me.btnNewPart)
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Controls.Add(Me.btnRemovePart)
@@ -481,7 +486,7 @@ Partial Class Quotation
         'btnRemovePart
         '
         Me.btnRemovePart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRemovePart.Location = New System.Drawing.Point(516, 16)
+        Me.btnRemovePart.Location = New System.Drawing.Point(530, 19)
         Me.btnRemovePart.Name = "btnRemovePart"
         Me.btnRemovePart.Size = New System.Drawing.Size(87, 26)
         Me.btnRemovePart.TabIndex = 6
@@ -491,7 +496,7 @@ Partial Class Quotation
         'btnEnterPart
         '
         Me.btnEnterPart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEnterPart.Location = New System.Drawing.Point(423, 16)
+        Me.btnEnterPart.Location = New System.Drawing.Point(440, 19)
         Me.btnEnterPart.Name = "btnEnterPart"
         Me.btnEnterPart.Size = New System.Drawing.Size(87, 26)
         Me.btnEnterPart.TabIndex = 5
@@ -507,7 +512,9 @@ Partial Class Quotation
         '
         'Panel2
         '
+        Me.Panel2.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.rdbNo)
         Me.Panel2.Controls.Add(Me.rdbYes)
         Me.Panel2.Controls.Add(Me.Label10)
@@ -580,9 +587,9 @@ Partial Class Quotation
         '
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
         Me.ListView2.GridLines = True
-        Me.ListView2.Location = New System.Drawing.Point(26, 476)
+        Me.ListView2.Location = New System.Drawing.Point(23, 476)
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(821, 93)
+        Me.ListView2.Size = New System.Drawing.Size(826, 93)
         Me.ListView2.TabIndex = 49
         Me.ListView2.UseCompatibleStateImageBehavior = False
         Me.ListView2.View = System.Windows.Forms.View.Details
@@ -674,6 +681,16 @@ Partial Class Quotation
         Me.Label1.TabIndex = 34
         Me.Label1.Text = "Quotation Window"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(3, -1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 39)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'Quotation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -700,6 +717,7 @@ Partial Class Quotation
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -765,4 +783,5 @@ Partial Class Quotation
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtDesc As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

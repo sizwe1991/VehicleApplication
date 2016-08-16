@@ -35,11 +35,15 @@ Partial Class SendSMS
         Me.Label2 = New System.Windows.Forms.Label()
         Me.rdbQuotation = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.btnClose)
         Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnSendSMS)
@@ -175,6 +179,16 @@ Partial Class SendSMS
         Me.Label1.TabIndex = 37
         Me.Label1.Text = "Send SMS Notification"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 9)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 80
+        Me.PictureBox1.TabStop = False
+        '
         'SendSMS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
@@ -190,6 +204,7 @@ Partial Class SendSMS
         Me.Text = "SendSMS"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -206,4 +221,5 @@ Partial Class SendSMS
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents btnSendSMS As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
