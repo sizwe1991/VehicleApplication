@@ -75,4 +75,3 @@ C:\Users\Public\Documents\VehicleApplication-2015-11-16\VehicleApplication\Vehic
 C:\Users\Public\Documents\VehicleApplication-2015-11-16\VehicleApplication\VehicleApplication\obj\x86\Debug\VehicleApplication.exe
 C:\Users\Public\Documents\VehicleApplication-2015-11-16\VehicleApplication\VehicleApplication\obj\x86\Debug\VehicleApplication.xml
 C:\Users\Public\Documents\VehicleApplication-2015-11-16\VehicleApplication\VehicleApplication\obj\x86\Debug\VehicleApplication.pdb
-C:\Users\Public\Documents\VehicleApplication-2015-11-16\VehicleApplication\VehicleApplication\obj\x86\Debug\VehicleApplication.vbprojResolveAssemblyReference.cache

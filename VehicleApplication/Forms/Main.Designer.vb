@@ -58,16 +58,15 @@ Partial Class Main
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.lblTime = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.MenuStrip1.Font = New System.Drawing.Font("Candara", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ProcessingToolStripMenuItem, Me.CustomerToolStripMenuItem, Me.EmployeeToolStripMenuItem, Me.PartToolStripMenuItem, Me.VehicleToolStripMenuItem, Me.CSIToolStripMenuItem, Me.NotificationToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.LogOutToolStripMenuItem, Me.ReprintToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 537)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1267, 27)
         Me.MenuStrip1.TabIndex = 0
@@ -287,24 +286,14 @@ Partial Class Main
         Me.lblTime.TabIndex = 9
         Me.lblTime.Text = "Label1"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(34, 70)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(280, 221)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackColor = System.Drawing.Color.OrangeRed
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1267, 564)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -321,7 +310,6 @@ Partial Class Main
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -360,5 +348,4 @@ Partial Class Main
     Friend WithEvents NotificationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SendSMSNotificationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReprintMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
