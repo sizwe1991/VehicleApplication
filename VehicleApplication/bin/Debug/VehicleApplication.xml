@@ -10,10 +10,6 @@ VehicleApplication
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:VehicleApplication.BookingDataSet.BookingViewDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:VehicleApplication.BookingDataSet.tblBookingDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -38,10 +34,6 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:VehicleApplication.BookingDataSet.BookingViewRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:VehicleApplication.BookingDataSet.tblBookingRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -63,10 +55,6 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:VehicleApplication.BookingDataSet.PurchasedPartViewRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:VehicleApplication.BookingDataSet.BookingViewRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -95,10 +83,6 @@ Row event argument class
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="T:VehicleApplication.BookingDataSetTableAdapters.PurchasedPartViewTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:VehicleApplication.BookingDataSetTableAdapters.BookingViewTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

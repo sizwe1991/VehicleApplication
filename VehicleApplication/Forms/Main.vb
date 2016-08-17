@@ -91,8 +91,6 @@ Public Class Main
         ' report.PrintToPrinter(New System.Drawing.Printing.PrinterSettings, New System.Drawing.Printing.PageSettings, False)
     End Sub
 
-  
-
     Private Sub TopUsedPartsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim frm As New TopUsedPart
         frm.ShowDialog()
@@ -163,6 +161,11 @@ Public Class Main
 
     Private Sub MostUsedPartsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles MostUsedPartsToolStripMenuItem.Click
         Dim frm As New TopUsedPart
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub BookingReportsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles BookingReportsToolStripMenuItem.Click
+        Dim frm As New ProceesedBookings
         frm.ShowDialog()
     End Sub
 End Class

@@ -35,6 +35,7 @@ Partial Class TopUsedPart
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.VehicleApplication.My.Resources.Resources.backgroud
         Me.Panel1.Controls.Add(Me.btnClose)
         Me.Panel1.Controls.Add(Me.btnPrint)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -101,7 +102,7 @@ Partial Class TopUsedPart
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 25)
+        Me.Label1.Location = New System.Drawing.Point(6, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(102, 18)
         Me.Label1.TabIndex = 4
