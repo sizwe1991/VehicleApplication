@@ -53,6 +53,7 @@ Public Class ForgotPassword
                     Dim usr As String = txtUsername.Text
                     btnCancel.PerformClick()
                     MsgBox("Thank you, your Password: " & empPD.Passsword, 64)
+                    Close()
                 End If
             End If
 

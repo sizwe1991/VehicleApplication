@@ -146,6 +146,7 @@ Public Class NewEmployee
             MsgBox("New Employee Save Successfully in the Database", 64)
 
             clear()
+            Close()
         End If
     End Sub
 End Class

@@ -46,9 +46,9 @@ Partial Class NewVehicle
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblCompanyName = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -284,6 +284,16 @@ Partial Class NewVehicle
         Me.Panel1.Size = New System.Drawing.Size(712, 497)
         Me.Panel1.TabIndex = 31
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 81
+        Me.PictureBox1.TabStop = False
+        '
         'lblCompanyName
         '
         Me.lblCompanyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -298,19 +308,9 @@ Partial Class NewVehicle
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(335, 287)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(116, 19)
+        Me.Label10.Size = New System.Drawing.Size(98, 19)
         Me.Label10.TabIndex = 31
-        Me.Label10.Text = "Company Name"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.VehicleApplication.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 81
-        Me.PictureBox1.TabStop = False
+        Me.Label10.Text = "Vehicle Make"
         '
         'NewVehicle
         '

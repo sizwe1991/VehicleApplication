@@ -168,4 +168,10 @@ Public Class Main
         Dim frm As New ProceesedBookings
         frm.ShowDialog()
     End Sub
+
+    Private Sub TowingReportToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TowingReportToolStripMenuItem.Click
+        Dim frm As New ProceesedTowing
+        frm.ShowDialog()
+    End Sub
+
 End Class

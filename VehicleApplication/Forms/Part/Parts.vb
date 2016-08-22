@@ -168,7 +168,7 @@ Public Class Parts
             MsgBox("Part was Successfully been saved into the database", 64)
 
 
-
+            Close()
         End If
     End Sub
 

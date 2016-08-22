@@ -148,6 +148,7 @@ Public Class AddVehicleModel
                 loadVehicle()
                 loadModel()
                 MsgBox(" Vehicle Name and Model Linked Successfully added", 64)
+                Close()
             Catch ex As Exception
                 MsgBox("You have an error !!" & vbLf & ex.Message)
             End Try

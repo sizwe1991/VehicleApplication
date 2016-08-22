@@ -301,9 +301,9 @@ Public Class Quotation
                 printTwoBookingReport(quoteNo)
             End If
 
-
-
             clear()
+
+            Close()
         End If
     End Sub
 

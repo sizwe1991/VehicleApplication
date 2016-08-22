@@ -55,6 +55,15 @@ Module ModuleSetting
         Return number
     End Function
 
+    Function getTowingNo() As Integer
+        Dim cmd As New SqlCommand("SELECT        MAX(TowNo) AS Expr1 FROM            [Towing.]", objCon)
+        objCon.Close()
+        objCon.Open()
+        Dim number As Integer = cmd.ExecuteScalar
+        objCon.Close()
+        cmd.Dispose()
+        Return number
+    End Function
 
     Public Function ValidNumber(ByVal Number As String) As Boolean
         Dim value As Boolean = True

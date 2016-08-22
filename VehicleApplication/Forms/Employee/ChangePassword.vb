@@ -90,6 +90,7 @@ Public Class ChangePassword
                 txtOldPassword.Focus()
 
                 MsgBox("Your Password Successfully Updated in the Database", 64)
+                Close()
             End If
 
         Catch ex As Exception

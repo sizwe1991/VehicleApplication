@@ -181,14 +181,9 @@ Public Class SearchCustomer
 
             Dim objCustomer As New CustomerPD(txtName.Text, txtPhysical.Text, txtPostal.Text, txtEmail.Text, txtTel.Text, faxNo, txtMobileNo.Text)
 
-
-
-
             objCustomerDA.UpdateCustomer(CustomerNo, objCustomer)
 
-
             MsgBox("Customer has Successfully been Edited in the database", 64)
-
 
             clear()
 

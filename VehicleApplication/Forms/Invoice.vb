@@ -211,6 +211,7 @@ Public Class Invoice
             End If
             clear()
 
+            Close()
         End If
     End Sub
 

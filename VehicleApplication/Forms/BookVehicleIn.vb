@@ -630,6 +630,9 @@ Public Class BookVehicleIn
             printTechnicianForm()
 
             clear()
+
+
+            Close()
         End If
     End Sub
 

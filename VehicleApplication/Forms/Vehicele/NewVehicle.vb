@@ -22,7 +22,7 @@ Public Class NewVehicle
             MsgBox("Please Vehicle Model No", 48)
             txtModel.Focus()
         ElseIf String.IsNullOrEmpty(txtCompany.Text) Then
-            MsgBox("Please Enter Company Name", 48)
+            MsgBox("Please Enter Make Name", 48)
             txtCompany.Focus()
         ElseIf ColorDialog1.Color = Nothing Then
             MsgBox("Please Select Vehicle Color", 48)
@@ -33,6 +33,7 @@ Public Class NewVehicle
             MsgBox("New Customer Vehicle Successfully Saved into the database", 64)
 
             clear()
+            Close()
         End If
     End Sub
 

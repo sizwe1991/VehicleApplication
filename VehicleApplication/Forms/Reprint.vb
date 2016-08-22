@@ -90,8 +90,28 @@ Public Class Reprint
                 printInvoice1(getQuotationNo(getInvoiceNo), getInvoiceNo)
             End If
         ElseIf rdbtowing.Checked = True Then
-
+            printTowingReport(getTowingNo())
         End If
+    End Sub
+
+    Public Sub printTowingReport(ByVal bkno As Integer)
+
+        Dim sql As String = "select * from [Towing.] where towno=" & bkno
+        Dim cmd As New SqlDataAdapter
+        Dim ds As New DataTable
+        Dim report As New TowingCrystalReport
+        cmd.SelectCommand = New SqlCommand
+        cmd.SelectCommand.CommandText = sql
+        cmd.SelectCommand.Connection = objCon
+        '   cmd.SelectCommand.Parameters.Add("@bkno", SqlDbType.Int).Value = bkno
+        cmd.Fill(ds)
+
+        report.SetDataSource(ds)
+        Dim objReport As New ReportViewer
+        objReport.CrystalReportViewer1.ReportSource = (report)
+        objReport.ShowDialog()
+        ' Me.CrystalReportViewer1.ReportSource = report
+        ' report.PrintToPrinter(New System.Drawing.Printing.PrinterSettings, New System.Drawing.Printing.PageSettings, False)
     End Sub
 
     Public Sub printBookingReport(ByVal bkno As Integer)
@@ -260,7 +280,27 @@ Public Class Reprint
 
             End If
         ElseIf rdbtowing.Checked = True Then
+            If String.IsNullOrEmpty(MaskedTextBox1.Text) Then
+                MsgBox("Please Enter Quotation No", 48)
+                MaskedTextBox1.Focus()
+            Else
+                Dim sql As String = "select * from [Towing.] where towno=" & MaskedTextBox1.Text
+                Dim cmd As New SqlDataAdapter
+                Dim ds As New DataTable
+                Dim report As New TowingCrystalReport
+                cmd.SelectCommand = New SqlCommand
+                cmd.SelectCommand.CommandText = sql
+                cmd.SelectCommand.Connection = objCon
+                '   cmd.SelectCommand.Parameters.Add("@bkno", SqlDbType.Int).Value = bkno
+                cmd.Fill(ds)
 
+                report.SetDataSource(ds)
+                Dim objReport As New ReportViewer
+                objReport.CrystalReportViewer1.ReportSource = (report)
+                objReport.ShowDialog()
+                ' Me.CrystalReportViewer1.ReportSource = report
+                ' report.PrintToPrinter(New System.Drawing.Printing.PrinterSettings, New System.Drawing.Printing.PageSettings, False)
+            End If
         End If
     End Sub
 

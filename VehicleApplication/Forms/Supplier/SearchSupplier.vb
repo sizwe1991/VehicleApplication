@@ -216,6 +216,8 @@ Public Class SearchSupplier
 
 
             loadSupplier()
+
+            Close()
         End If
 
     End Sub

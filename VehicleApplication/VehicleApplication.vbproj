@@ -350,6 +350,12 @@
     <Compile Include="Reports\Viewer\ProceesedBookings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reports\Viewer\ProceesedTowing.Designer.vb">
+      <DependentUpon>ProceesedTowing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Viewer\ProceesedTowing.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reports\Viewer\PurchasedParts.Designer.vb">
       <DependentUpon>PurchasedParts.vb</DependentUpon>
     </Compile>
@@ -500,6 +506,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Viewer\ProceesedBookings.resx">
       <DependentUpon>ProceesedBookings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Viewer\ProceesedTowing.resx">
+      <DependentUpon>ProceesedTowing.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Viewer\PurchasedParts.resx">
       <DependentUpon>PurchasedParts.vb</DependentUpon>
